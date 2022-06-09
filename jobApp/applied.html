@@ -23,6 +23,26 @@
     <div><a href="bookmark.html">Bookmarks</a></div>
   </div>
 
+  <!-- onChange works like onClick for button -->
+  <select onChange="handleNameSort()" id="sortName">
+    <option value="">Sort By Name</option>
+    <option value="Ascending">Ascending</option>
+    <option value="Descending">Descending</option>
+  </select>
+
+  <select onChange="handleSalarySort()" id="sortSalary">
+    <option value="">Sort By Salary</option>
+    <option value="Ascending">Low to High</option>
+    <option value="Descending">High to Low</option>
+  </select>
+
+  <select id="filter">
+    <option value="">Sort By Job Role</option>
+    <option value="Backend">Backend</option>
+    <option value="Frontend">Frontend</option>
+    <option value="FSD">FSD</option>
+  </select>
+
   <main>
     <table>
       <thead>
@@ -42,13 +62,80 @@
 </body>
 <script>
   //you need to code here
-
   let arrFromLS = JSON.parse(localStorage.getItem("jobData"));
   // console.log(arrFromLS)
-  let bookMarkArr = JSON.parse(localStorage.getItem("bookMarkData"))||[];
+  //This below function will display data based on selected role, using array filter method
+  document.querySelector("#filter").addEventListener("change",handleFilter)
+  function handleFilter(){
+     let selected=document.querySelector("#filter").value;
+      //console.log(selected)
+      //below code will filter the array based on the selected role, using array filter method
+    let filteredList=arrFromLS.filter(function(elem){
+      return elem.personRole==selected;
+    });
+    console.log(filteredList);
+    displayTable(filteredList);
+  }
+  //this function will invoke once the sort option will get called by the user
+  function handleNameSort() {
+    let selector = document.querySelector("#sortName").value;
+    //below code will sort the string in ascending order
+    if (selector == "Ascending") {
+      arrFromLS.sort(function (a, b) {
+        if (a.personName > b.personName) {
+          return 1;
+        }
+        if (a.personName < b.personName) {
+          return -1;
+        }
+        else {
+          return 0;
+        }
+      })
+      displayTable(arrFromLS);
+    }
+
+    if (selector == "Descending") {
+      arrFromLS.sort(function (a, b) {
+        if (a.personName > b.personName) {
+          return -1;
+        }
+        if (a.personName < b.personName) {
+          return 1;
+        }
+        else {
+          return 0;
+        }
+      })
+      displayTable(arrFromLS);
+    }
+
+  }
+  //below code will sort salary
+  function handleSalarySort() {
+    let selector = document.querySelector("#sortSalary").value;
+    //below code will sort the salary in ascending order
+    if (selector == "Ascending") {
+      arrFromLS.sort(function (a, b) {
+          return a.personSalary-b.personSalary;
+      })
+      displayTable(arrFromLS);
+    }
+    //below code will sort the salary in descending order
+    if (selector == "Descending") {
+       arrFromLS.sort(function (a, b) {
+        return b.personSalary-a.personSalary;
+       })
+       displayTable(arrFromLS);
+     }
+
+  }
+
+  let bookMarkArr = JSON.parse(localStorage.getItem("bookMarkData")) || [];
 
   displayTable(arrFromLS);
   function displayTable(arrFromLS) {
+    document.querySelector("tbody").innerHTML = "";
     arrFromLS.forEach(function (elem) {
       let tr = document.createElement("tr");
 
