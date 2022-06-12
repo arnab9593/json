@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Signup</title>
+    <style>
+        #image {
+            /* border: 1px solid black; */
+            height: 50px;
+        }
+
+        #image>img {
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #main {
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin-top: 20px;
+            height: 550px;
+            width: 35%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 33px;
+            margin-top: 28px;
+            font-size: 22px;
+        }
+
+        p {
+            text-align: center;
+            padding: 17px;
+            font-size: 12px;
+        }
+
+        label {
+            padding: 30px;
+            margin-bottom: 200px;
+
+        }
+
+        input {
+            border: 1px solid rgb(179, 179, 179);
+            padding: 13px;
+            width: 85%;
+            margin-left: 20px;
+            margin-top: 8px;
+            border-radius: 5px;
+
+        }
+
+        #signup {
+            width: 91%;
+        }
+
+        #child {
+            /* border: 1px solid black; */
+            margin-top: 15px;
+            height: 75px;
+
+        }
+
+        #child>input {
+            margin-bottom: 10%;
+        }
+
+        #btn {
+            /* border: 1px solid black; */
+            margin-top: 10px;
+            height: 45px;
+            width: 89%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: rgb(216, 216, 216);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image">
+        <img src="https://sso.masaischool.com/brand_dark.svg"></img>
+    </div>
+    <div id="main">
+        <h3>Sign Up</h3>
+        <form>
+            <div id="child">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" id="name"></input>
+            </div>
+            <div id="child">
+                <label>Email</label>
+                <input type="email" placeholder="Enter email" id="mail">
+            </div>
+            <div id="child">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" id="passwd">
+            </div>
+            <!-- <p>By signing up, I accept the Masai School <a href="https://masaischool.com/terms/">Terms of Service</a> and acknowledge the <a
+                    href="https://masaischool.com/privacy/">Privacy Policy</a></p>
+            <input type="submit" value="SIGN UP" id="signup">
+            <p>Already have an account? <a href="login.html">Sign In</a></p> -->
+        </form>
+        <p>By signing up, I accept the Masai School <a href="https://masaischool.com/terms/">Terms of Service</a>
+            and acknowledge the <a href="https://masaischool.com/privacy/">Privacy Policy</a></p>
+        <div id="btn">
+            <button>SIGN UP</button>
+        </div>
+
+
+        <p>Already have an account? <a href="login.html">Sign In</a></p>
+    </div>
+</body>
+
+</html>
+
+<script src="authenticator.js"></script>
