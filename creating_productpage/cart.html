@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <style type="text/css">
+        #main {
+            height: 600px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: (repeat(2, 20px));
+            gap: 10px;
+        }
+
+        #main>div>img {
+            width: 90%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Work in progress</h1>
+    <h1 id="cartTotalAmount"></h1>
+    
+    <div id="main">
+
+    </div>
 </body>
+
 </html>
+
+<script>
+    let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+    let cartTotal=0;
+    function displayData(mensData) {
+        document.querySelector("#main").innerHTML = "";
+        cartTotal=0
+        mensData.forEach(function (element, index) {
+            //let main_box = document.createElement("div");
+            cartTotal+= Number(element.price)
+            console.log(cartTotal)
+            let product_info = document.createElement("div");
+
+            let product_img = document.createElement("img");
+            product_img.setAttribute("src", element.image_url);
+
+            let product_name = document.createElement("p");
+            product_name.innerText = element.name
+
+            let product_price = document.createElement("p")
+            product_price.innerText = element.price;
+
+            let product_delete_from_cart = document.createElement("button");
+            product_delete_from_cart.innerText = "Delete";
+            product_delete_from_cart.addEventListener("click", function () {
+                deleteFromCart(element.name)
+            });
+
+            product_info.append(product_img, product_name, product_price, product_delete_from_cart)
+
+            document.querySelector("#main").append(product_info);
+            document.getElementById("cartTotalAmount").innerHTML="Total price = Rs. "+cartTotal;
+
+        })
+    }
+
+    displayData(cartLS);
+
+    function deleteFromCart(name){
+        let deleted = cartLS.filter(function(elem){
+            return elem.name != name;
+        })
+        cartLS=deleted;
+        localStorage.setItem("cartPage",JSON.stringify(cartLS))
+        displayData(cartLS);
+    }
+
+
+
+
+</script>

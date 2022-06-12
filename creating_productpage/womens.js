@@ -1,4 +1,4 @@
-let womensData = [
+ let womensData = [
     {
       image_url:
         "https://content.shop4reebok.com/static/Product-GL2296/reebok_GL2296_1.jpg.plp",
@@ -454,13 +454,15 @@ let womensData = [
       price: 949,
       strikedoffprice: 1899,
     },
-  ];
+   ];
 
-  displayData(womensData)
-function displayData(mensData) {
+let cartLS=JSON.parse(localStorage.getItem("cartPage")) || []
+
+displayData(womensData)
+function displayData(womensData) {
   document.querySelector("#main").innerHTML = "";
   womensData.forEach(function (element, index) {
-    let main_box = document.createElement("div");
+    //let main_box = document.createElement("div");
 
     let product_info = document.createElement("div");
 
@@ -473,11 +475,21 @@ function displayData(mensData) {
     let product_price = document.createElement("p")
     product_price.innerText = element.price;
 
+    // let product_price_strikedoffprice = document.createElement("p")
+    // product_price_strikedoffprice = element.strikedoffprice;
+
     let product_add_to_cart = document.createElement("button");
     product_add_to_cart.innerText = "Add to Cart";
     product_add_to_cart.addEventListener("click", function () {
-      addToCart(element)
+      if(addToCartfun(element.name) === true){
+        alert("Product added sucessfully")
 
+        cartLS.push(element);
+        localStorage.setItem("cartPage",JSON.stringify(cartLS));
+      }
+      else{
+        alert("Prduct already in the cart");
+      }
     });
 
     product_info.append(product_img, product_name, product_price, product_add_to_cart)
@@ -488,8 +500,13 @@ function displayData(mensData) {
   })
 }
 
-function addToCart(){
-  window.location.href="cart.html"
+function addToCartfun(name){
+  for(let i=0;i<cartLS.length;i++){
+    if(cartLS[i].name == name){
+      return false;
+    }
+  }
+  return true; 
 }
 
 function handlePriceSort() {
