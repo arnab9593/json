@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple TV+</title>
-    <link rel="icon" href="appleImages/tv.4572edc9.png" type = "image/x-icon">
+    <link rel="icon" href="appleImages/tv.4572edc9.png" type="image/x-icon">
     <style>
         #main1 {
             border: 1px solid white;
             height: 210px;
-
-
         }
 
         #main1>h3 {
@@ -29,8 +27,6 @@
             display: flex;
             gap: 11px;
             margin-top: -15px;
-            /* box-sizing: border-box; */
-
         }
 
         #comedy {
@@ -42,8 +38,17 @@
             display: flex;
             gap: 11px;
             margin-top: -15px;
-            /* box-sizing: border-box; */
+        }
 
+        #screen {
+            border: 1px solid white;
+            height: 150px;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 11px;
+            margin-top: -15px;
         }
 
         #feast_for_the_eyes>div {
@@ -53,7 +58,16 @@
             margin-top: auto;
             margin-bottom: auto;
         }
+
         #comedy>div {
+            border: 1px solid white;
+            height: 140px;
+            width: 250px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        #screen>div {
             border: 1px solid white;
             height: 140px;
             width: 250px;
@@ -67,7 +81,15 @@
             border-radius: 10px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
+
         #comedy>div>img {
+            height: 140px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #screen>div>img {
             height: 140px;
             width: 250px;
             border-radius: 10px;
@@ -107,39 +129,120 @@
             margin-top: 0px;
 
         }
-        #main2{
+
+        #main2 {
             border: 1px solid white;
             height: 290px;
         }
+
         #main2>h3 {
             margin-left: 16px;
             margin-top: 5px;
         }
+
         #extraordinary_people>div>img {
             height: 140px;
             width: 250px;
             border-radius: 10px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
-        #documentary{
+
+        #fstP {
             margin-top: 2px;
             font-size: 14px;
         }
-        #middle_text{
+
+        #secP {
             margin-top: -12px;
             font-size: 16px;
         }
-        #last_text{
+
+        #trdP {
             margin-top: -12px;
             font-size: 14px;
         }
-        #cha_cha_real_smooth{
+
+        #cha_cha_real_smooth {
             border: 1px solid black;
             height: 500px;
             width: 98%;
             margin-left: auto;
             margin-right: auto;
         }
+        .drama{
+            border: 1px solid white;
+            height: 150px;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 11px;
+            margin-top: -15px;
+        }
+
+        .drama>div>img {
+            height: 140px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .comedySec{
+            border: 1px solid white;
+            height: 150px;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 11px;
+            margin-top: -15px;
+        }
+
+        .comedySec>div>img {
+            height: 140px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .feature{
+            border: 1px solid white;
+            height: 150px;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 11px;
+            margin-top: -15px;
+        }
+
+        .feature>div>img {
+            height: 140px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .singleP{
+            margin-left: 16px;
+            margin-top: -14px;
+        }
+        .codaOscar{
+            border: 1px solid white;
+            height: 198px;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 15px;
+            margin-top: -9px;
+        }
+        .codaOscar>div>img {
+            height: 180px;
+            width: 312px;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        
     </style>
 </head>
 
@@ -148,7 +251,7 @@
     <div id="main1">
         <h3>A Feast for the Eyes</h3>
         <div id="feast_for_the_eyes">
-            
+
         </div>
         <hr>
     </div>
@@ -157,29 +260,15 @@
     <div id="main1">
         <h3>Feel-Good Comedies</h3>
         <div id="comedy">
-            
+
         </div>
         <hr>
     </div>
     <!-- From Page to screen start -->
     <div id="main1">
         <h3>From Page to Screen</h3>
-        <div id="feast_for_the_eyes">
-            <div>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/QiFf4rD5DY65HbtJUOjE7Q/738x416.webp" alt="">
-            </div>
-            <div>
-                <img src="https://is2-ssl.mzstatic.com/image/thumb/2hSgeI8AyyKcpu_6Rhwg1w/738x416.webp" alt="">
-            </div>
-            <div>
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp" alt="">
-            </div>
-            <div>
-                <img src="https://is3-ssl.mzstatic.com/image/thumb/IryLNqf3vJszRupPX70Elg/738x416.webp" alt="">
-            </div>
-            <div>
-                <img src="https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp" alt="">
-            </div>
+        <div id="screen">
+
         </div>
         <hr>
     </div>
@@ -189,36 +278,7 @@
         <div id="main2">
             <h3>Extraordinary People</h3>
             <div id="extraordinary_people">
-                <div>
-                    <img src="https://is4-ssl.mzstatic.com/image/thumb/q15eqXAa_XH-L0KIDkPBJA/1478x832.webp" alt="">
-                    <p id="documentary">DOCUMENTARY</p>
-                    <p id="middle_text">They Call Me Magic</p>
-                    <p id="last_text">An intimate look at the life and legacy of an icon-Earvin "Magic" Johnson</p>
-                </div>
-                <div>
-                    <img src="https://is2-ssl.mzstatic.com/image/thumb/MP-C7FdZjq2Clj0BSxDbXg/1478x832.webp" alt="">
-                    <p id="documentary">DOCUMENTARY</p>
-                    <p id="middle_text">Greatness Code</p>
-                    <p id="last_text">Seven iconic atheletes reveal the pivotal career moment they touched greatness.</p>
-                </div>
-                <div>
-                    <img src="https://is1-ssl.mzstatic.com/image/thumb/PzRfPYv8-A3pM1Uafiv1qQ/1478x832.webp" alt="">
-                    <p id="documentary">DOCUMENTARY</p>
-                    <p id="middle_text">Make or Break</p>
-                    <p id="last_text">Follow the best surfers on the planet as they vie for the World Championship title.</p>
-                </div>
-                <div>
-                    <img src="https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/1478x832.webp" alt="">
-                    <p id="documentary">DOCUMENTARY</p>
-                    <p id="middle_text">Billie Eilish: The World's A Little...</p>
-                    <p id="last_text">"The most intimate and revelatory music film in years."-USA Today</p>
-                </div>
-                <div>
-                    <img src="https://is2-ssl.mzstatic.com/image/thumb/qAk-30MspnyIG9hVKJ1qKQ/1478x832.webp" alt="">
-                    <p id="documentary">DOCUMENTARY</p>
-                    <p id="middle_text">Dear...</p>
-                    <p id="last_text">Profiles of society's most figures and the lives of those they've inspired.</p>
-                </div>
+
             </div>
             <hr>
         </div>
@@ -252,8 +312,44 @@
     <div id="cha_cha_real_smooth">
 
     </div>
-
     <!-- cha cha real smooth end -->
+    <!-- all drama series start -->
+    <div id="main1">
+        <h3>All Drama Series</h3>
+        <div class="drama">
+
+        </div>
+        <hr>
+    </div>
+    <!-- all drama series end -->
+    <!-- all comedy series start -->
+    <div id="main1">
+        <h3>All Comedy Series</h3>
+        <div class="comedySec">
+
+        </div>
+        <hr>
+    </div>
+    <!-- all comedy series end -->
+    <!-- all features films start -->
+    <div id="main1">
+        <h3>All Feature Films</h3>
+        <div class="feature">
+
+        </div>
+        <hr>
+    </div>
+    <!-- all features films end -->
+    <!-- start of coda oscar winner best picture -->
+    <div id="main1">
+        <h3>CODA: Oscar® Winner—Best Picture</h3>
+        <p class="singleP">The historic film won cinema’s highest prize.</p>
+        <div class="codaOscar">
+
+        </div>
+        <hr>
+    </div>
+    <!-- end of coda oscar winner best pictire -->
 </body>
 
 </html>
@@ -261,13 +357,13 @@
 
 <script>
     //start of a feast for the eyes
-    let aFeastforEyesimg=[
+    let aFeastforEyesimg = [
         {
             imgurl: "https://is1-ssl.mzstatic.com/image/thumb/vPnF3gIE_xEMoXPI1SyluA/738x416.webp",
             id: "preplan"
         },
         {
-            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/6kPVBOcFxH5eWRVp9Vy9BA/738x416.webp",
+            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/6kPVBOcFxH5eWRVp9Vy9BA/738x416.webp",
             id: "tinyworld"
         },
         {
@@ -281,64 +377,336 @@
         {
             imgurl: "https://is2-ssl.mzstatic.com/image/thumb/3UIt7-edNvHDrXR_FkZd6A/738x416.webp",
             id: "velvet"
-        }     
+        }
     ];
 
     displayimgfeast(aFeastforEyesimg)
 
-    function displayimgfeast(aFeastforEyesimg){
-        aFeastforEyesimg.forEach(function(elem){
+    function displayimgfeast(aFeastforEyesimg) {
+        aFeastforEyesimg.forEach(function (elem) {
 
-            let photos=document.createElement("div");
-            let movphoto=document.createElement("img");
-                movphoto.setAttribute("src",elem.imgurl)
+            let photos = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
 
             photos.append(movphoto)
             document.querySelector("#feast_for_the_eyes").append(photos);
-        }); 
+        });
     }
 
     //end of a feast for the eyes
 
     //start of feel good comedies
 
-    let feelGoodcomediesimg=[
+    let feelGoodcomediesimg = [
         {
-            imgurl : "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp",
-            id : "tedlasso"
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp",
+            id: "tedlasso"
         },
         {
-            imgurl : "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp",
-            id : "acapulco"
+            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp",
+            id: "acapulco"
         },
         {
             imgurl: "https://is5-ssl.mzstatic.com/image/thumb/y-GzfKyC0y6x5Dd8254GpQ/738x416.webp",
-            id : "trying"
+            id: "trying"
         },
         {
             imgurl: "https://is2-ssl.mzstatic.com/image/thumb/le6mxqLNaXH47MHIH7stzw/738x416.webp",
-            id : "schmigadoon"
+            id: "schmigadoon"
         },
         {
             imgurl: "https://is1-ssl.mzstatic.com/image/thumb/RHDyosPjHXJc01IiulkQSg/738x416.webp",
-            id : "centralpark"
+            id: "centralpark"
         }
     ]
 
     displayimgcomedies(feelGoodcomediesimg)
 
-    function displayimgcomedies(feelGoodcomediesimg){
-        feelGoodcomediesimg.forEach(function(elem){
+    function displayimgcomedies(feelGoodcomediesimg) {
+        feelGoodcomediesimg.forEach(function (elem) {
 
-            let photosComedies=document.createElement("div");
-            let movphoto=document.createElement("img");
-                movphoto.setAttribute("src",elem.imgurl)
-            
+            let photosComedies = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+
             photosComedies.append(movphoto)
             document.querySelector("#comedy").append(photosComedies)
         });
     }
-
     //end of feel good comedies
+
+    //start of from page to screen
+
+    let fromPageToScreenimg = [
+        {
+            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/QiFf4rD5DY65HbtJUOjE7Q/738x416.webp",
+            id: "slowhorses"
+        },
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/2hSgeI8AyyKcpu_6Rhwg1w/738x416.webp",
+            id: "essexserpent"
+        },
+        {
+            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp",
+            id: "pachinko"
+        },
+        {
+            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/IryLNqf3vJszRupPX70Elg/738x416.webp",
+            id: "roar"
+        },
+        {
+            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp",
+            id: "potlemygrey"
+        },
+
+    ];
+
+    displayimgscreen(fromPageToScreenimg)
+
+    function displayimgscreen(fromPageToScreenimg) {
+        fromPageToScreenimg.forEach(function (elem) {
+
+            let photosScreen = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+
+            photosScreen.append(movphoto)
+            document.querySelector("#screen").append(photosScreen)
+        });
+    }
+    //end of from page to screen
+
+    //start of extraordinary people
+
+    let extraordinaryPeopledata = [
+
+        {
+            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/q15eqXAa_XH-L0KIDkPBJA/1478x832.webp",
+            fstTxt: "DOCUMENTARY",
+            secTxt: "They Call Me Magic",
+            trdTxt: "An intimate look at the life and legacy of an icon-Earvin" + "Magic" + "Johnson",
+        },
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/MP-C7FdZjq2Clj0BSxDbXg/1478x832.webp",
+            fstTxt: "DOCUMENTARY",
+            secTxt: "Greatness Code",
+            trdTxt: "Seven iconic atheletes reveal the pivotal career moment they touched greatness.",
+        },
+        {
+            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/PzRfPYv8-A3pM1Uafiv1qQ/1478x832.webp",
+            fstTxt: "DOCUMENTARY",
+            secTxt: "Make or Break",
+            trdTxt: "Follow the best surfers on the planet as they vie for the World Championship title.",
+        },
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/1478x832.webp",
+            fstTxt: "DOCUMENTARY",
+            secTxt: "Billie Eilish: The World's A Little...",
+            trdTxt: "The most intimate and revelatory music film in years." + "-USA Today",
+        },
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/qAk-30MspnyIG9hVKJ1qKQ/1478x832.webp",
+            fstTxt: "DOCUMENTARY",
+            secTxt: "Dear...",
+            trdTxt: "Profiles of society's most figures and the lives of those they've inspired.",
+        },
+
+    ];
+
+    displayExtraordinaryPeople(extraordinaryPeopledata)
+
+    function displayExtraordinaryPeople(extraordinaryPeopledata) {
+        extraordinaryPeopledata.forEach(function (elem) {
+
+            let photosExtraPep = document.createElement("div");
+
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+            let firstText = document.createElement("p");
+            firstText.innerText = elem.fstTxt;
+            firstText.setAttribute("id", "fstP")
+            let secondText = document.createElement("p");
+            secondText.innerText = elem.secTxt;
+            secondText.setAttribute("id", "secP")
+            let thirdText = document.createElement("p");
+            thirdText.innerText = elem.trdTxt;
+            thirdText.setAttribute("id", "trdP")
+
+            photosExtraPep.append(movphoto, firstText, secondText, thirdText)
+            document.querySelector("#extraordinary_people").append(photosExtraPep)
+        });
+    }
+
+    //end of extraordinary people
+
+    //start of all drama series
+
+    let allDramaSeries = [
+        {
+            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/XiXPs1AKOFQE7cq7AVlJeQ/738x416.webp",
+            id: "tehran"
+        },
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp",
+            id: "severance"
+        },
+        {
+            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/fiTyznFr4Rsvd25TNhffww/738x416.webp",
+            id: "shininggirls"
+        },
+        {
+            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp",
+            id: "wecrashed"
+        },
+        {
+            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp",
+            id: "forAllMankind"
+        }
+
+    ];
+
+    displayAllDramaSeries(allDramaSeries)
+
+    function displayAllDramaSeries(allDramaSeries) {
+        allDramaSeries.forEach(function (elem) {
+
+            let photosDrama = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+
+            photosDrama.append(movphoto)
+            document.querySelector(".drama").append(photosDrama)
+        });
+    }
+    //end of all drama series
+
+    //start of all comedy series
+
+    let allComedySeriesimg = [
+
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp",
+            id: "tedLasso"
+        },
+        {
+            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/neRAWaMZZ5xVz4fnbFXJUA/738x416.webp",
+            id: "physical"
+        },
+        {
+            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/dbEKo7rp5RGNNDrCbA7AUQ/738x416.webp",
+            id: "theAfterParty"
+        },
+        {
+            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/neRAWaMZZ5xVz4fnbFXJUA/738x416.webp",
+            id: "centralPark"
+        },
+        {
+            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp",
+            id: "acapulco2"
+        },
+
+
+    ];
+
+    displayComedySeries(allComedySeriesimg)
+
+    function displayComedySeries(allComedySeriesimg) {
+        allComedySeriesimg.forEach(function (elem) {
+
+            let photosComedy = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+
+            photosComedy.append(movphoto)
+            document.querySelector(".comedySec").append(photosComedy)
+        });
+    }
+
+    //end of all comedy series
+
+    //start of all feature films
+
+    let allFeatureFilmsimg = [
+        
+        {
+            imgurl : "https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp",
+            id : "coda"
+        },
+        {
+            imgurl : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp",
+            id : "macbeth"
+        },
+        {
+            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp",
+            id : "thesky"
+        },
+        {
+            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/k-4X4dDwJrtXlsgr1VI_0w/738x416.webp",
+            id : "swan"
+        },
+        {
+            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp",
+            id : "finch"
+        },
+    ];
+
+    displayFeatureFilms(allFeatureFilmsimg)
+
+    function displayFeatureFilms(allFeatureFilmsimg) {
+        allFeatureFilmsimg.forEach(function (elem) {
+
+            let photosFeature = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+
+            photosFeature.append(movphoto)
+            document.querySelector(".feature").append(photosFeature)
+        });
+    }
+    //end of all feature films
+
+    //start of coda oscar winner best picture
+
+    let codaOscarImg = [
+
+        {
+            imgurl : "https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/6f/b7/62/6fb7628d-679f-17db-dbf6-ac52a7debb06/d97eccb1-2dbf-45b5-a35d-452d9496715f.lsr/1478x832fe.webp",
+            id : "codaOscar1"
+        },
+        {
+            imgurl : "https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/de/3a/28/de3a2812-29b3-1e25-7941-a99ecb0e327c/851040fe-d937-4c50-b7d2-1188d59a022e.lsr/1478x832fe.webp",
+            id : "codaOscar2"
+        },
+        {
+            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/4d/5e/12/4d5e12e1-9063-1e07-62be-b209b75401ff/19aac7af-1170-4a01-9f9e-b281b54f78df.lsr/1478x832fe.webp",
+            id : "codaOscar3"
+        },
+        {
+            imgurl : "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/6e/6b/c5/6e6bc5c0-0329-5915-f402-3dd9e31b0ad1/0b0c78ef-1abb-44c5-af22-d7f46c5425f1.lsr/1478x832fe.webp",
+            id : "codeOscar4"
+        }
+    ];
+
+    displaycodaOscarImg(codaOscarImg)
+
+    function displaycodaOscarImg(codaOscarImg) {
+        codaOscarImg.forEach(function (elem) {
+
+            let photoscodaOscar = document.createElement("div");
+            let movphoto = document.createElement("img");
+            movphoto.setAttribute("src", elem.imgurl)
+
+            photoscodaOscar.append(movphoto)
+            document.querySelector(".codaOscar").append(photoscodaOscar)
+        });
+    }
+
+    //end of coda oscar winner best pictire
+
+    
+
+   
+
     
 </script>
