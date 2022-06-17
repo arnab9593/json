@@ -6,707 +6,330 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple TV+</title>
-    <link rel="icon" href="appleImages/tv.4572edc9.png" type="image/x-icon">
-    <style>
-        #main1 {
-            border: 1px solid white;
-            height: 210px;
-        }
-
-        #main1>h3 {
-            margin-left: 16px;
-            margin-top: 4px;
-        }
-
-        #feast_for_the_eyes {
-            border: 1px solid white;
-            height: 150px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -15px;
-        }
-
-        #comedy {
-            border: 1px solid white;
-            height: 150px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -15px;
-        }
-
-        #screen {
-            border: 1px solid white;
-            height: 150px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -15px;
-        }
-
-        #feast_for_the_eyes>div {
-            border: 1px solid white;
-            height: 140px;
-            width: 250px;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-        #comedy>div {
-            border: 1px solid white;
-            height: 140px;
-            width: 250px;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-        #screen>div {
-            border: 1px solid white;
-            height: 140px;
-            width: 250px;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-        #feast_for_the_eyes>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        #comedy>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        #screen>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        hr {
-            margin-left: 11px;
-            margin-right: 11px;
-            margin-top: 20px;
-        }
-
-        #extraordinary_people {
-            border: 1px solid white;
-            height: 220px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -9px;
-
-        }
-
-        #extraordinary_people>p {
-            margin-left: 16px;
-            margin-top: 4px;
-
-        }
-
-        #extraordinary_people>div {
-            border: 1px solid white;
-            height: 100%;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-
-        }
-
-        #main2 {
-            border: 1px solid white;
-            height: 290px;
-        }
-
-        #main2>h3 {
-            margin-left: 16px;
-            margin-top: 5px;
-        }
-
-        #extraordinary_people>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        #fstP {
-            margin-top: 2px;
-            font-size: 14px;
-        }
-
-        #secP {
-            margin-top: -12px;
-            font-size: 16px;
-        }
-
-        #trdP {
-            margin-top: -12px;
-            font-size: 14px;
-        }
-
-        #cha_cha_real_smooth {
-            border: 1px solid black;
-            height: 500px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .drama{
-            border: 1px solid white;
-            height: 150px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -15px;
-        }
-
-        .drama>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .comedySec{
-            border: 1px solid white;
-            height: 150px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -15px;
-        }
-
-        .comedySec>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-        .feature{
-            border: 1px solid white;
-            height: 150px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 11px;
-            margin-top: -15px;
-        }
-
-        .feature>div>img {
-            height: 140px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-        .singleP{
-            margin-left: 16px;
-            margin-top: -14px;
-        }
-        .codaOscar{
-            border: 1px solid white;
-            height: 198px;
-            width: 98%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            gap: 15px;
-            margin-top: -9px;
-        }
-        .codaOscar>div>img {
-            height: 180px;
-            width: 312px;
-            border-radius: 10px;
-            margin-top: 10px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-        
-    </style>
+    <link rel="icon" href="https://tv.apple.com/assets/brands/TV_App_Logo-d343000dfd3ca454ca8705a7aa7dcf4f.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 
 <body>
-    <!-- A feast for the eyes part start -->
-    <div id="main1">
-        <h3>A Feast for the Eyes</h3>
-        <div id="feast_for_the_eyes">
-
-        </div>
-        <hr>
+    <!-- navigation part -->
+    <div class="nav">
+        <ul id="ul">
+            <li><a href="#"><img
+                        src="https://tv.apple.com/assets/brands/Apple_TV_plus_logo_white-2721485772b7d06c4e33379ce990870e.svg"
+                        alt="appleLogo"></a></li>
+            <!-- <li class="signIn"><a href="singinpage/login.html"><i class="fa fa-user"></i> Sign In</a></li> -->
+            <li class="signIn"></li>
+            <li class="name"></li>
+        </ul>
     </div>
-    <!-- A feast for the eyes part end -->
-    <!-- Feel good comedies start -->
-    <div id="main1">
-        <h3>Feel-Good Comedies</h3>
-        <div id="comedy">
-
-        </div>
-        <hr>
+    <div id="bannerimage">
+        <img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/e4/0e/3d/e40e3dbc-a7e8-6c94-bbd3-60127ee688ad/c952782b-6707-468e-8647-f43c176ad5cf.png/999x562sr.jpg"
+            alt="">
     </div>
-    <!-- From Page to screen start -->
-    <div id="main1">
-        <h3>From Page to Screen</h3>
-        <div id="screen">
-
-        </div>
-        <hr>
+    <div id="button">
+        <h1 id="firsth1">All Apple Originals.</h1>
+        <p class="p1">Exclusively on Apple TV+. Watch here and on the Apple TV app across your devices. </p>
+        <button>Start Free Trial</button>
+        <p class="p2">7 days free,then $4.99/month.</p>
+        <p class="p3">Or 3 months free when you buy an eligible Apple device.
+            <a href="">Terms apply.</a> Some titles coming later to Apple TV+.
+        </p>
+        <img src="https://tv.apple.com/assets/button_glyphs/chevron_down_white-ac33693b2675c26fc4eab8fb94b6190c.png"
+            alt="" id="godown">
     </div>
-    <!-- From Page to screen end -->
-    <!-- Extraordinary people start -->
-    <div>
+    <div class="container">
+
+        <!-- for all mankind start -->
         <div id="main2">
-            <h3>Extraordinary People</h3>
-            <div id="extraordinary_people">
+            <h3>For All Mankind:Watch Season 1 Free for a Limited Time</h3>
+            <p id="mankindP">A thrilling "what if" take on the global space race.</p>
+            <div id="firstMankind" class="block-1 owl-carousel">
 
             </div>
             <hr>
         </div>
-    </div>
-    <!-- Extraordinary people end -->
-    <!-- Creatures & critters start -->
-    <div id="main1">
-        <h3>Creatures & Critters</h3>
-        <div id="feast_for_the_eyes">
-            <div>
-                <img src="https://is4-ssl.mzstatic.com/image/thumb/_WDO4pxq_b43sYn1s-nJQg/738x416.webp" alt="">
+        <!-- for all mankind end -->
+        <!-- start of most popular now -->
+        <div id="main1">
+            <h3>Most Popular Now</h3>
+            <div id="mostPopularNow" class="block-2 owl-carousel">
+
             </div>
-            <div>
-                <img src="https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp" alt="">
+            <hr>
+        </div>
+        <!-- end of most popular now -->
+
+        <!-- start of watch entire seasons -->
+        <div id="main1">
+            <h3>Watch Entire Seasons</h3>
+            <div id="watchEntireSeasons" class="block-3 owl-carousel">
+
             </div>
-            <div>
-                <img src="https://is5-ssl.mzstatic.com/image/thumb/_Kq-GgPdDxxqWtSZ9GbHug/738x416.webp" alt="">
-            </div>
-            <div>
-                <img src="https://is2-ssl.mzstatic.com/image/thumb/StRHuSLsy2WhrdoPNZ07xQ/738x416.webp" alt="">
-            </div>
-            <div>
-                <img src="https://is2-ssl.mzstatic.com/image/thumb/2lfdtvo9bvduvVLrbcASow/738x416.webp" alt="">
+            <hr>
+        </div>
+        <!-- end of watch entire seasons -->
+
+        <!-- start of latest originals -->
+        <div>
+            <div id="main2">
+                <h3>Latest Originals</h3>
+                <div id="latestOriginal" class="block-4 owl-carousel">
+
+                </div>
+                <hr>
             </div>
         </div>
-        <hr>
-    </div>
-    <!-- Creatures & critters end -->
-    <!-- cha cha real smooth start -->
+        <!-- end of latest originals -->
 
-    <div id="cha_cha_real_smooth">
+        <!-- start of coming soon -->
+        <div id="main2">
+            <h3>Coming Soon</h3>
+            <p id="mankindP">Add to your Up Next watchlist today.</p>
+            <div id="comingSoon" class="block-5 owl-carousel">
 
+            </div>
+            <hr>
+        </div>
+        <!-- end of coming soon -->
+        <!-- start of major league baseball -->
+
+        <div id="main2">
+            <h3>Major League Baseball</h3>
+            <p id="mankindP">Free for a limited time, watch Friday Night Baseball and daily coverage.</p>
+            <div id="baseball" class="block-6 owl-carousel">
+
+            </div>
+            <hr>
+        </div>
+
+        <!-- end of major league baseball -->
     </div>
-    <!-- cha cha real smooth end -->
-    <!-- all drama series start -->
-    <div id="main1">
-        <h3>All Drama Series</h3>
-        <div class="drama">
+    <div id="sifiSection">
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/Features112/v4/0e/7d/44/0e7d448d-140a-bac1-3c73-4b560bdff4c4/9c4db295-abea-4591-b192-c724006dc239.png/1320x495sr.png"
+            alt="">
+            <div class="sifiDes">
+                <p>SCI-FI</p>
+                <h1>Immerse Yourself in the Extraodinary</h1>
+                <p>Discover series and flims that will take you places you never imagined.</p>
+            </div>
+
+        <div id="sifiInnerImages" class="block-19 owl-carousel">
 
         </div>
-        <hr>
     </div>
-    <!-- all drama series end -->
-    <!-- all comedy series start -->
-    <div id="main1">
-        <h3>All Comedy Series</h3>
-        <div class="comedySec">
+    <div class="container">
+
+        <!-- A feast for the eyes start -->
+        <div id="main1" style="margin-top:-20px ;">
+            <h3>A Feast for the Eyes</h3>
+            <div id="feast_for_the_eyes" class="block-7 owl-carousel">
+
+            </div>
+            <hr>
+        </div>
+        <!-- A feast for the eyes part end -->
+        <!-- Feel good comedies start -->
+        <div id="main1">
+            <h3>Feel-Good Comedies</h3>
+            <div id="comedy" class="block-8 owl-carousel">
+
+            </div>
+            <hr>
+        </div>
+        <!-- From Page to screen start -->
+        <div id="main1">
+            <h3>From Page to Screen</h3>
+            <div id="screen" class="block-9 owl-carousel">
+
+            </div>
+            <hr>
+        </div>
+        <!-- From Page to screen end -->
+        <!-- Extraordinary people start -->
+        <div>
+            <div id="main2">
+                <h3>Extraordinary People</h3>
+                <div id="extraordinary_people" class="block-10 owl-carousel">
+
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- Extraordinary people end -->
+        <!-- Creatures & critters start -->
+        <div id="main1">
+            <h3>Creatures & Critters</h3>
+            <div id="creaturesCritters" class="block-11 owl-carousel">
+
+            </div>
+            <hr>
+        </div>
+        <!-- Creatures & critters end -->
+        <!-- cha cha real smooth start -->
+
+        <div id="cha_cha_real_smooth">
 
         </div>
-        <hr>
-    </div>
-    <!-- all comedy series end -->
-    <!-- all features films start -->
-    <div id="main1">
-        <h3>All Feature Films</h3>
-        <div class="feature">
+        <!-- cha cha real smooth end -->
+        <!-- all drama series start -->
+        <div id="main1">
+            <h3>All Drama Series</h3>
+            <div class="drama block-12 owl-carousel">
 
+            </div>
+            <hr>
         </div>
-        <hr>
-    </div>
-    <!-- all features films end -->
-    <!-- start of coda oscar winner best picture -->
-    <div id="main1">
-        <h3>CODA: Oscar® Winner—Best Picture</h3>
-        <p class="singleP">The historic film won cinema’s highest prize.</p>
-        <div class="codaOscar">
+        <!-- all drama series end -->
+        <!-- all comedy series start -->
+        <div id="main1">
+            <h3>All Comedy Series</h3>
+            <div class="comedySec block-13 owl-carousel">
 
+            </div>
+            <hr class="line">
         </div>
-        <hr>
+        <!-- all comedy series end -->
+        <!-- all features films start -->
+        <div id="main1" style="margin-top:10px">
+            <h3>All Feature Films</h3>
+            <div class="feature block-14 owl-carousel">
+
+            </div>
+            <hr class="line">
+        </div>
+        <!-- all features films end -->
+        <!-- start of coda oscar winner best picture -->
+        <div id="coda" style="margin-top:20px">
+            <h3>CODA: Oscar® Winner—Best Picture</h3>
+            <p class="singleP">The historic film won cinema’s highest prize.</p>
+            <div class="codaOscar block-15 owl-carousel">
+
+            </div>
+            <hr class="line">
+        </div>
+        <!-- end of coda oscar winner best pictire -->
+        <!-- start of nonfication films & series -->
+        <div id="coda">
+            <h3>Nonfication Films & Series</h3>
+            <p class="singleP">Explore fascinating stories that inspired and englighteen.</p>
+            <div class="nonFic block-16 owl-carousel">
+
+            </div>
+            <hr class="line">
+        </div>
+        <!-- end of notification films & series -->
+        <!-- start of all nonfiction series -->
+        <div id="main1" style="margin-top: 20px;">
+            <h3>All Nonfiction Series</h3>
+            <div class="allNonfictionSeries block-17 owl-carousel">
+
+            </div>
+            <hr class="line" style="margin-top:70px;">
+        </div>
+        <!-- end of all nonfiction series -->
+
+        <!-- start of kids & family -->
+        <div id="coda">
+            <h3>Kids & Family</h3>
+            <p class="singleP">Discover shows and movies filled with wonders and imagination. </p>
+            <div class="kidsAndfamily block-18 owl-carousel">
+
+            </div>
+        </div>
+        <!-- end of kids & family -->
     </div>
-    <!-- end of coda oscar winner best pictire -->
+    <!-- bottom div start -->
+    <div id="bottomdiv">
+        <div id="childbottomdiv">
+            <img src="https://tv.apple.com/assets/brands/TV_App_Logo-d343000dfd3ca454ca8705a7aa7dcf4f.png" alt=""
+                id="btmlogo">
+            <h1>Watch Apple TV+ here or anywhere.</h1>
+            <h2>Find Apple TV+ on the Apple TV app, available on Apple devices, smart TVs, and more.</h2>
+            <a href="./devicepg/Airplay.html">See all supported devices > </a>
+            <div id="btmdevice">
+                <div onclick="appletvFun()">
+                    <img src="https://tv.apple.com/assets/icons/product_landing_apple_tv_wht-9610e73e2ef117d35da65eed60d2624a.png"
+                        alt="error">
+                    <p>Apple TV</p>
+                </div>
+                <div onclick="iphone()">
+                    <img src="https://tv.apple.com/assets/icons/product_landing_iPhone_wht-0adcded885905e1a22bfc7ae9bf45fa8.png"
+                        alt="">
+                    <p>iPhone</p>
+                </div>
+                <div onclick="ipad()">
+                    <img src="https://tv.apple.com/assets/icons/product_landing_iPad_wht-ac93596ed7aeb5e1c15ba18bcb7bfd13.png"
+                        alt="">
+                    <p>iPad</p>
+                </div>
+                <div onclick="mac()">
+                    <img src="https://tv.apple.com/assets/icons/product_landing_mac_wht-37e6f73080a15fe8a35b85e7ba8f5468.png"
+                        alt="">
+                    <p>Mac</p>
+                </div>
+                <div onclick="airplay()">
+                    <img src="https://tv.apple.com/assets/icons/product_landing_airplay_wht-f348507fa5bdc6b005b126f0654aa663.png"
+                        alt="">
+                    <p>AirPlay</p>
+                </div>
+            </div>
+            <h2>See it on your big screen.</h2>
+            <a href="./devicepg/Airplay.html">Set up your device ></a> <br>
+            <a href="https://www.apple.com/apple-tv-app/devices/">Explore compatible devices ></a>
+            <div id="childbottomdiv2">
+                <div>
+                    <img
+                        src="https://tv.apple.com/assets/icons/banner_usb_lrg_wht-67ed29cf6e5f5add9b2814937f976197.png"></img>
+                    <p>Streaming Devices</p>
+                    <p>Roku</p>
+                    <p>Fire TV</p>
+                    <p>Google TV</p>
+                    <p>Android TV</p>
+                </div>
+                <div>
+                    <img src="https://tv.apple.com/assets/icons/banner_tv_lrg_wht-e0ef12292435df4d9416312f322dbe32.png"
+                        alt="">
+                    <p>Smart TVs</p>
+                    <p>Samsung</p>
+                    <p>LG</p>
+                    <p>VIZIO</p>
+                    <p>Sony</p>
+                </div>
+                <div>
+                    <img src="https://tv.apple.com/assets/icons/banner_controller_lrg_wht-5eca7993879258c2ff5e8425055643b6.png"
+                        alt="">
+                    <p>Gaming Consoles</p>
+                    <p>Play Station</p>
+                    <p>Xbox</p>
+                </div>
+            </div>
+            <p id="lastP">Devices availability varies by country or region</p>
+        </div>
+    </div>
+    <!-- bottom div end -->
+    <!-- bottom hiding start trial part -->
+    <div id="myID" class="bottomMenu hide">
+        <div class="bottomLeft">
+            <p class="first">All Apple Originals.</p>
+            <p class="second">Start watching with 7 days free. Or 3 months free when you buy an eligible Apple device.
+                <a href="#">Terms apply.</a>
+            </p>
+        </div>
+        <div class="bottomRight">
+            <a href="#">Start Free Trial</a>
+            <p>7 days free, then $4.99/month.</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/signin.js"></script>
 </body>
 
 </html>
-
-
-<script>
-    //start of a feast for the eyes
-    let aFeastforEyesimg = [
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/vPnF3gIE_xEMoXPI1SyluA/738x416.webp",
-            id: "preplan"
-        },
-        {
-            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/6kPVBOcFxH5eWRVp9Vy9BA/738x416.webp",
-            id: "tinyworld"
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/xW-YFC38wO80XQewW5Mn7A/738x416.webp",
-            id: "earthatnight"
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/fwOVLEMoZhr-wkppMR12XA/738x416.webp",
-            id: "wolfwalker"
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/3UIt7-edNvHDrXR_FkZd6A/738x416.webp",
-            id: "velvet"
-        }
-    ];
-
-    displayimgfeast(aFeastforEyesimg)
-
-    function displayimgfeast(aFeastforEyesimg) {
-        aFeastforEyesimg.forEach(function (elem) {
-
-            let photos = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photos.append(movphoto)
-            document.querySelector("#feast_for_the_eyes").append(photos);
-        });
-    }
-
-    //end of a feast for the eyes
-
-    //start of feel good comedies
-
-    let feelGoodcomediesimg = [
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp",
-            id: "tedlasso"
-        },
-        {
-            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp",
-            id: "acapulco"
-        },
-        {
-            imgurl: "https://is5-ssl.mzstatic.com/image/thumb/y-GzfKyC0y6x5Dd8254GpQ/738x416.webp",
-            id: "trying"
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/le6mxqLNaXH47MHIH7stzw/738x416.webp",
-            id: "schmigadoon"
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/RHDyosPjHXJc01IiulkQSg/738x416.webp",
-            id: "centralpark"
-        }
-    ]
-
-    displayimgcomedies(feelGoodcomediesimg)
-
-    function displayimgcomedies(feelGoodcomediesimg) {
-        feelGoodcomediesimg.forEach(function (elem) {
-
-            let photosComedies = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photosComedies.append(movphoto)
-            document.querySelector("#comedy").append(photosComedies)
-        });
-    }
-    //end of feel good comedies
-
-    //start of from page to screen
-
-    let fromPageToScreenimg = [
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/QiFf4rD5DY65HbtJUOjE7Q/738x416.webp",
-            id: "slowhorses"
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/2hSgeI8AyyKcpu_6Rhwg1w/738x416.webp",
-            id: "essexserpent"
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp",
-            id: "pachinko"
-        },
-        {
-            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/IryLNqf3vJszRupPX70Elg/738x416.webp",
-            id: "roar"
-        },
-        {
-            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp",
-            id: "potlemygrey"
-        },
-
-    ];
-
-    displayimgscreen(fromPageToScreenimg)
-
-    function displayimgscreen(fromPageToScreenimg) {
-        fromPageToScreenimg.forEach(function (elem) {
-
-            let photosScreen = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photosScreen.append(movphoto)
-            document.querySelector("#screen").append(photosScreen)
-        });
-    }
-    //end of from page to screen
-
-    //start of extraordinary people
-
-    let extraordinaryPeopledata = [
-
-        {
-            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/q15eqXAa_XH-L0KIDkPBJA/1478x832.webp",
-            fstTxt: "DOCUMENTARY",
-            secTxt: "They Call Me Magic",
-            trdTxt: "An intimate look at the life and legacy of an icon-Earvin" + "Magic" + "Johnson",
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/MP-C7FdZjq2Clj0BSxDbXg/1478x832.webp",
-            fstTxt: "DOCUMENTARY",
-            secTxt: "Greatness Code",
-            trdTxt: "Seven iconic atheletes reveal the pivotal career moment they touched greatness.",
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/PzRfPYv8-A3pM1Uafiv1qQ/1478x832.webp",
-            fstTxt: "DOCUMENTARY",
-            secTxt: "Make or Break",
-            trdTxt: "Follow the best surfers on the planet as they vie for the World Championship title.",
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/1478x832.webp",
-            fstTxt: "DOCUMENTARY",
-            secTxt: "Billie Eilish: The World's A Little...",
-            trdTxt: "The most intimate and revelatory music film in years." + "-USA Today",
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/qAk-30MspnyIG9hVKJ1qKQ/1478x832.webp",
-            fstTxt: "DOCUMENTARY",
-            secTxt: "Dear...",
-            trdTxt: "Profiles of society's most figures and the lives of those they've inspired.",
-        },
-
-    ];
-
-    displayExtraordinaryPeople(extraordinaryPeopledata)
-
-    function displayExtraordinaryPeople(extraordinaryPeopledata) {
-        extraordinaryPeopledata.forEach(function (elem) {
-
-            let photosExtraPep = document.createElement("div");
-
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-            let firstText = document.createElement("p");
-            firstText.innerText = elem.fstTxt;
-            firstText.setAttribute("id", "fstP")
-            let secondText = document.createElement("p");
-            secondText.innerText = elem.secTxt;
-            secondText.setAttribute("id", "secP")
-            let thirdText = document.createElement("p");
-            thirdText.innerText = elem.trdTxt;
-            thirdText.setAttribute("id", "trdP")
-
-            photosExtraPep.append(movphoto, firstText, secondText, thirdText)
-            document.querySelector("#extraordinary_people").append(photosExtraPep)
-        });
-    }
-
-    //end of extraordinary people
-
-    //start of all drama series
-
-    let allDramaSeries = [
-        {
-            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/XiXPs1AKOFQE7cq7AVlJeQ/738x416.webp",
-            id: "tehran"
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp",
-            id: "severance"
-        },
-        {
-            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/fiTyznFr4Rsvd25TNhffww/738x416.webp",
-            id: "shininggirls"
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp",
-            id: "wecrashed"
-        },
-        {
-            imgurl: "https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp",
-            id: "forAllMankind"
-        }
-
-    ];
-
-    displayAllDramaSeries(allDramaSeries)
-
-    function displayAllDramaSeries(allDramaSeries) {
-        allDramaSeries.forEach(function (elem) {
-
-            let photosDrama = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photosDrama.append(movphoto)
-            document.querySelector(".drama").append(photosDrama)
-        });
-    }
-    //end of all drama series
-
-    //start of all comedy series
-
-    let allComedySeriesimg = [
-
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp",
-            id: "tedLasso"
-        },
-        {
-            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/neRAWaMZZ5xVz4fnbFXJUA/738x416.webp",
-            id: "physical"
-        },
-        {
-            imgurl: "https://is2-ssl.mzstatic.com/image/thumb/dbEKo7rp5RGNNDrCbA7AUQ/738x416.webp",
-            id: "theAfterParty"
-        },
-        {
-            imgurl: "https://is3-ssl.mzstatic.com/image/thumb/neRAWaMZZ5xVz4fnbFXJUA/738x416.webp",
-            id: "centralPark"
-        },
-        {
-            imgurl: "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp",
-            id: "acapulco2"
-        },
-
-
-    ];
-
-    displayComedySeries(allComedySeriesimg)
-
-    function displayComedySeries(allComedySeriesimg) {
-        allComedySeriesimg.forEach(function (elem) {
-
-            let photosComedy = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photosComedy.append(movphoto)
-            document.querySelector(".comedySec").append(photosComedy)
-        });
-    }
-
-    //end of all comedy series
-
-    //start of all feature films
-
-    let allFeatureFilmsimg = [
-        
-        {
-            imgurl : "https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp",
-            id : "coda"
-        },
-        {
-            imgurl : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp",
-            id : "macbeth"
-        },
-        {
-            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp",
-            id : "thesky"
-        },
-        {
-            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/k-4X4dDwJrtXlsgr1VI_0w/738x416.webp",
-            id : "swan"
-        },
-        {
-            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp",
-            id : "finch"
-        },
-    ];
-
-    displayFeatureFilms(allFeatureFilmsimg)
-
-    function displayFeatureFilms(allFeatureFilmsimg) {
-        allFeatureFilmsimg.forEach(function (elem) {
-
-            let photosFeature = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photosFeature.append(movphoto)
-            document.querySelector(".feature").append(photosFeature)
-        });
-    }
-    //end of all feature films
-
-    //start of coda oscar winner best picture
-
-    let codaOscarImg = [
-
-        {
-            imgurl : "https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/6f/b7/62/6fb7628d-679f-17db-dbf6-ac52a7debb06/d97eccb1-2dbf-45b5-a35d-452d9496715f.lsr/1478x832fe.webp",
-            id : "codaOscar1"
-        },
-        {
-            imgurl : "https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/de/3a/28/de3a2812-29b3-1e25-7941-a99ecb0e327c/851040fe-d937-4c50-b7d2-1188d59a022e.lsr/1478x832fe.webp",
-            id : "codaOscar2"
-        },
-        {
-            imgurl : "https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/4d/5e/12/4d5e12e1-9063-1e07-62be-b209b75401ff/19aac7af-1170-4a01-9f9e-b281b54f78df.lsr/1478x832fe.webp",
-            id : "codaOscar3"
-        },
-        {
-            imgurl : "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/6e/6b/c5/6e6bc5c0-0329-5915-f402-3dd9e31b0ad1/0b0c78ef-1abb-44c5-af22-d7f46c5425f1.lsr/1478x832fe.webp",
-            id : "codeOscar4"
-        }
-    ];
-
-    displaycodaOscarImg(codaOscarImg)
-
-    function displaycodaOscarImg(codaOscarImg) {
-        codaOscarImg.forEach(function (elem) {
-
-            let photoscodaOscar = document.createElement("div");
-            let movphoto = document.createElement("img");
-            movphoto.setAttribute("src", elem.imgurl)
-
-            photoscodaOscar.append(movphoto)
-            document.querySelector(".codaOscar").append(photoscodaOscar)
-        });
-    }
-
-    //end of coda oscar winner best pictire
-
-    
-
-   
-
-    
-</script>
