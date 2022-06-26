@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        #navbar {
+            height: 70px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        #navbar>button {
+            width: 100px;
+            margin-top: 22px
+        }
+
+        #body {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #body img {
+            height: 130px;
+            width: 130px;
+        }
+
+        table,
+        td,
+        tr,
+        th {
+            border: 1px solid black;
+            /* text-align: left; */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        tr>th {
+            background-color: rgb(107, 0, 128);
+            color: white;
+        }
+        #delbtn{
+            color:blue;
+            /* justify-content: center;
+            align-items: center; */
+            /* display: block; */
+            /* margin: auto; */
+            /* display: block; */
+            vertical-align: middle;
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <button>
+            <a href="/home/arnab/Desktop/Arnab_fp04_376/unit-3/sprint-1/day-4/assignments/index.html">Home Page</a>
+        </button>
+    </div>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Course Name</th>
+                    <th>Unit</th>
+                    <th>Batch</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>
+    </main>
+    <!-- <div id="main">
+        Dashboard
+    </div> -->
+</body>
+
+</html>
+
+<script>
+    let data = JSON.parse(localStorage.getItem("students"));
+
+    function append(data) {
+        // let displayData = document.getElementById("tbody");
+        
+        data.forEach(function (elem, index) {
+            data.innerHTML="";
+            let tr = document.createElement("tr")
+
+            let stuPhoto = document.createElement("img");
+                stuPhoto.src = elem.image;
+            let stuName = document.createElement("td");
+                stuName.innerText = elem.name;
+            let stuCourse = document.createElement("td");
+                stuCourse.innerText = elem.course;
+            let stuUnit = document.createElement("td");
+                stuUnit.innerText = elem.unit;
+            let stuBatch = document.createElement("td");
+                stuBatch.innerText = elem.batch;
+
+            let deletebtn = document.createElement("button");
+                deletebtn.setAttribute("id","delbtn")
+                deletebtn.innerText = "Remove"
+                deletebtn.addEventListener("click", function () {
+                    removeData(elem,index);
+            });
+
+            tr.append(stuPhoto, stuName, stuCourse, stuUnit, stuBatch, deletebtn);
+            document.querySelector("tbody").append(tr);
+        });
+    }
+
+    append(data);
+
+    function removeData(elem,index) {
+        // console.log(index);
+        let trashDB=JSON.parse(localStorage.getItem("trash")) || []
+        trashDB.push(elem)
+        localStorage.setItem("trash", JSON.stringify(trashDB));
+        let ans = data.splice(index, 1);
+        localStorage.setItem("students", JSON.stringify(data));
+        window.location.reload();
+    }
+
+    function calculate() {
+        let calObj = {};
+
+        for (let i = 0; i < data.length; i++) {
+            if (!calObj[data[i].batch]) {
+                calObj[data[i].batch] = 0;
+            }
+        }
+        //to check the student count of each batch
+        for (let i = 0; i < data.length; i++) {
+            calObj[data[i].batch]++;
+        }
+
+        //  document.querySelector("#navbar").append(calObj)
+         for(let i in calObj){
+            document.querySelector("#navbar").append(i+"-"+calObj[i]+" students || ")
+         }
+        //  console.log(calObj);
+    }
+    calculate();
+
+
+
+</script>

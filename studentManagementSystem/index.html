@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        #navbar {
+            height: 70px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        #navbar>button {
+            width: 100px;
+            margin-top: 22px
+        }
+        #container{
+            border: 1px solid black;
+            width: 25%;
+            margin: auto auto;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <button>
+            <a href="/home/arnab/Desktop/Arnab_fp04_376/unit-3/sprint-1/day-4/assignments/dashboard.html">Dashboard</a>
+        </button>
+    </div>
+    <div id="container">
+        <h1>Enter Student details</h1>
+        <form onsubmit="storeData(event)" id="stuData">
+            <input type="text" id="name" placeholder="Enter name"> <br>
+            <input type="text" id="courses" placeholder="Enter course"><br>
+            <input type="number" id="unit" placeholder="Enter unit"><br>
+            <input type="text" id="image" placeholder="Enter Image"><br>
+            <input type="number" id="batch" placeholder="Enter batch name"><br>
+            <input type="submit"><br><br>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    //constructor function start to create object
+    function studentObj(n, c, u, i, b) {
+        this.name = n;
+        this.course = c;
+        this.unit = u;
+        this.image = i;
+        this.batch = `FT-WEB${b}`;
+
+    }
+    //constructor function end to create object
+
+    //function start to get data from the html form
+
+    let lsData = JSON.parse(localStorage.getItem("students")) || [];
+
+    function storeData(event) {
+        event.preventDefault()
+
+        let form = document.getElementById("stuData")
+
+        let name = form.name.value;
+        let courses = form.courses.value;
+        let unit = form.unit.value;
+        let image = form.image.value;
+        let batch = form.batch.value;
+
+        let stus = new studentObj(name, courses, unit, image, batch);
+
+        lsData.push(stus);
+        localStorage.setItem("students", JSON.stringify(lsData));
+        location.reload();
+        // console.log(stus);
+    }
+    //function end to get data from the html form
+
+    //function to claculate number of students of each batch and how many bathes are there start
+
+    function calculate() {
+        let calObj = {};
+
+        for (let i = 0; i < lsData.length; i++) {
+            if (!calObj[lsData[i].batch]) {
+                calObj[lsData[i].batch] = 0;
+            }
+        }
+        //to check the student count of each batch
+        for (let i = 0; i < lsData.length; i++) {
+            calObj[lsData[i].batch]++;
+        }
+
+        //  document.querySelector("#navbar").append(calObj)
+         for(let i in calObj){
+            document.querySelector("#navbar").append(i+"-"+calObj[i]+" students || ")
+         }
+        //  console.log(calObj);
+    }
+    calculate();
+    //function to claculate number of students of each batch and how many bathes are there end
+</script>
